@@ -1,0 +1,33 @@
+{
+    "name": "astandkaya/hatomalu",
+    "type": "library",
+    "description": "Make html by PHP",
+    "keywords": [
+        "hatomalu"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ast."
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hatomalu\\": "src/Hatomalu"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

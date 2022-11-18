@@ -1,0 +1,25 @@
+<?php
+
+namespace Hatomalu\Component\Element\Table;
+
+use Hatomalu\Component\Category\{
+    Tag,
+    TagAbstract,
+    Flow,
+    Palpable,
+};
+
+final class Table extends TagAbstract implements Flow, Palpable
+{
+    public const TAG = 'table';
+
+    public function isAllowParent( Tag $parent ) : \Exception|bool
+    {
+        return true;
+    }
+
+    public function isAllowChild( Tag $child ) : \Exception|bool
+    {
+        return true;
+    }
+}
